@@ -22,7 +22,7 @@ namespace GradeBook.GradeBooks
             var averageGrades = Students.Select(stu => stu.AverageGrade).ToList();
             averageGrades.Sort();
 
-            if (averageGrade >= 0.80 / averageGrades.Count)
+            if (averageGrade >= 0.1 / averageGrades.Count)
                 return 'A';
             if (averageGrade > 0.60 / averageGrades.Count && averageGrade < 0.80 / averageGrades.Count)
                 return 'B';
