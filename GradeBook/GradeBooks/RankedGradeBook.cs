@@ -24,11 +24,11 @@ namespace GradeBook.GradeBooks
 
             if (averageGrade >= 0.80 / averageGrades.Count)
                 return 'A';
-            else if (averageGrade >= 0.60 / averageGrades.Count && averageGrade < 0.80 / averageGrades.Count)
+            else if (averageGrade > 0.60 / averageGrades.Count && averageGrade < 0.80 / averageGrades.Count)
                 return 'B';
-            else if (averageGrade >= 0.40 / averageGrades.Count && averageGrade < 0.60 / averageGrades.Count)
+            else if (averageGrade > 0.40 / averageGrades.Count && averageGrade < 0.60 / averageGrades.Count)
                 return 'C';
-            else if (averageGrade >= 0.20 / averageGrades.Count && averageGrade < 0.40 / averageGrades.Count)
+            else if (averageGrade > 0.20 / averageGrades.Count && averageGrade < 0.40 / averageGrades.Count)
                 return 'D';
             else
                 return 'F';
